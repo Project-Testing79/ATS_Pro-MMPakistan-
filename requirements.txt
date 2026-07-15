@@ -26,3 +26,5 @@ gunicorn==23.0.0
 #   leave this commented out — the module's built-in fallback
 #   validator (required-keys check) is used instead.
 # jsonschema==4.23.0
+
+Flask-Mail==0.10.0

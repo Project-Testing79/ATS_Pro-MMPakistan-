@@ -13,6 +13,7 @@ simple module-level "run once" flag, since Flask has no direct equivalent.
 
 from __future__ import annotations
 
+import os
 import psycopg
 from config import Config
 

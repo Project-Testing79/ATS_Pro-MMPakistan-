@@ -31,8 +31,7 @@ def create_app() -> Flask:
 
     app.config["MAIL_USERNAME"] = os.getenv("MAIL_USERNAME")
     app.config["MAIL_PASSWORD"] = os.getenv("MAIL_PASSWORD")
-    print("MAIL USERNAME:", os.getenv("MAIL_USERNAME"))
-    print("MAIL PASSWORD LENGTH:", len(os.getenv("MAIL_PASSWORD")))
+    app.logger.info("Mail configuration loaded")
 
     app.config["MAIL_DEFAULT_SENDER"] = os.getenv(
         "MAIL_DEFAULT_SENDER"
